@@ -9,7 +9,7 @@ int main() {
 
   while ((c = getchar()) != EOF)
     if (c >= '0' && c <= '9')
-      ++ndigit[c - '0'];
+      ++ndigit[c - '0']; // INFO: [c - '0'] conevrts char to int
     else if (c == ' ' || c == '\n' || c == '\t')
       ++nwhite;
     else
